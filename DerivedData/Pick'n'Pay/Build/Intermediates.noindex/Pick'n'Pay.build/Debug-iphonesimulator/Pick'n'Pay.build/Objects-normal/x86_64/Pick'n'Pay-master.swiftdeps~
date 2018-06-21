@@ -1,0 +1,23 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "fedc8102009b4dff34ede0449c506417"
+build_time: [1529572083, 35988000]
+inputs:
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/ShoppingCartViewCell.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/Item.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/ProductInfoViewController.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/PaymentViewController.swift": [1528370569, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/RegisterViewController.swift": [1529409454, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/AddressViewController.swift": [1528370569, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/Product.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/ProductsViewCell.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/ShoppingCartViewController.swift": [1529572082, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/CheckoutViewController.swift": [1529571812, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/ProductsViewController.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/DataController.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/LoginPageViewController.swift": [1529484034, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/Data.swift": [1529566352, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/CategoriesViewController.swift": [1529063205, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/Item+CoreDataProperties.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/AppDelegate.swift": [1528811718, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/CheckoutViewCell.swift": [1528370570, 0]
+  "/Users/rss/Desktop/iOS-Shopping-App-master/Pick'n'Pay-swift3/TableViewImages/WelcomViewController.swift": [1528983396, 0]

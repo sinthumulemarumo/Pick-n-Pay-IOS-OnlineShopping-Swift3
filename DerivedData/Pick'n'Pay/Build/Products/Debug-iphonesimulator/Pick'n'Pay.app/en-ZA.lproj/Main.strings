@@ -1,0 +1,129 @@
+
+/* Class = "UITextField"; placeholder = "  בתוקף עד"; ObjectID = "0Ac-JX-MOF"; */
+"0Ac-JX-MOF.placeholder" = "  בתוקף עד";
+
+/* Class = "UILabel"; text = "123000"; ObjectID = "1hE-XZ-O6Q"; */
+"1hE-XZ-O6Q.text" = "123000";
+
+/* Class = "UILabel"; text = "Qty.1"; ObjectID = "1jC-g5-tFa"; */
+"1jC-g5-tFa.text" = "Qty.1";
+
+/* Class = "UILabel"; text = "Num items"; ObjectID = "2PU-Pv-lRF"; */
+"2PU-Pv-lRF.text" = "Num items";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "31f-97-EJq"; */
+"31f-97-EJq.text" = "Price";
+
+/* Class = "UILabel"; text = "Prodact Description"; ObjectID = "33q-L3-iJc"; */
+"33q-L3-iJc.text" = "Prodact Description";
+
+/* Class = "UITextField"; placeholder = "  מספר כרטיס"; ObjectID = "4Wg-p1-257"; */
+"4Wg-p1-257.placeholder" = "  מספר כרטיס";
+
+/* Class = "UIButton"; normalTitle = "בצע תשלום"; ObjectID = "5HJ-Ic-s1M"; */
+"5HJ-Ic-s1M.normalTitle" = "בצע תשלום";
+
+/* Class = "UITextField"; placeholder = "עיר"; ObjectID = "6jA-Qh-7Xe"; */
+"6jA-Qh-7Xe.placeholder" = "עיר";
+
+/* Class = "UILabel"; text = "הזן את פרטי כרטיס האשראי על מנת להשלים את העיסקה"; ObjectID = "6rh-Ye-dfJ"; */
+"6rh-Ye-dfJ.text" = "הזן את פרטי כרטיס האשראי על מנת להשלים את העיסקה";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "97X-xh-Wkb"; */
+"97X-xh-Wkb.text" = "Price";
+
+/* Class = "UILabel"; text = "משלוח"; ObjectID = "CGk-N1-UwW"; */
+"CGk-N1-UwW.text" = "משלוח";
+
+/* Class = "UILabel"; text = "התווסף בהצלחה"; ObjectID = "Cfl-5t-Sog"; */
+"Cfl-5t-Sog.text" = "התווסף בהצלחה";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "Dbk-QS-Rz3"; */
+"Dbk-QS-Rz3.text" = "Price";
+
+/* Class = "UIButton"; normalTitle = "אישור פרטים"; ObjectID = "Eg9-Hv-D25"; */
+"Eg9-Hv-D25.normalTitle" = "אישור פרטים";
+
+/* Class = "UILabel"; text = "כמות"; ObjectID = "Fzj-Vp-Vlc"; */
+"Fzj-Vp-Vlc.text" = "כמות";
+
+/* Class = "UITextField"; placeholder = "שם משפחה"; ObjectID = "G78-aP-2pc"; */
+"G78-aP-2pc.placeholder" = "שם משפחה";
+
+/* Class = "UILabel"; text = "הזן את פרטיך"; ObjectID = "Gab-6X-GgE"; */
+"Gab-6X-GgE.text" = "הזן את פרטיך";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "IdU-88-kZ0"; */
+"IdU-88-kZ0.text" = "Product Name";
+
+/* Class = "UITextField"; placeholder = "כתובת לחיוב"; ObjectID = "K6X-PO-RqG"; */
+"K6X-PO-RqG.placeholder" = "כתובת לחיוב";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "KoQ-O3-prd"; */
+"KoQ-O3-prd.text" = "Product Name";
+
+/* Class = "UITextField"; placeholder = "טלפון"; ObjectID = "M7G-31-TqI"; */
+"M7G-31-TqI.placeholder" = "טלפון";
+
+/* Class = "UITextField"; placeholder = "שם פרטי"; ObjectID = "MEV-0P-4mX"; */
+"MEV-0P-4mX.placeholder" = "שם פרטי";
+
+/* Class = "UITextField"; placeholder = "כתובת למשלוח"; ObjectID = "Mbb-Uv-1Yb"; */
+"Mbb-Uv-1Yb.placeholder" = "כתובת למשלוח";
+
+/* Class = "UILabel"; text = "סכום כולל 1000000"; ObjectID = "Pk0-V7-hjJ"; */
+"Pk0-V7-hjJ.text" = "סכום כולל 1000000";
+
+/* Class = "UILabel"; text = "100000"; ObjectID = "QzJ-cm-q7v"; */
+"QzJ-cm-q7v.text" = "100000";
+
+/* Class = "UITextField"; placeholder = "מיקוד"; ObjectID = "SYG-Wm-hKA"; */
+"SYG-Wm-hKA.placeholder" = "מיקוד";
+
+/* Class = "UIButton"; normalTitle = "אישור הזמנה"; ObjectID = "Wl0-LX-jEw"; */
+"Wl0-LX-jEw.normalTitle" = "אישור הזמנה";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "X4G-QW-iSy"; */
+"X4G-QW-iSy.text" = "Product Name";
+
+/* Class = "UIButton"; normalTitle = "ברוך הבא"; ObjectID = "XzA-N8-9uj"; */
+"XzA-N8-9uj.normalTitle" = "ברוך הבא";
+
+/* Class = "UITextView"; text = "הערות"; ObjectID = "YJJ-aX-dzr"; */
+"YJJ-aX-dzr.text" = "הערות";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "ZAX-qd-Sic"; */
+"ZAX-qd-Sic.text" = "Product Name";
+
+/* Class = "UIButton"; normalTitle = "בצע הזמנה"; ObjectID = "aht-ty-X8f"; */
+"aht-ty-X8f.normalTitle" = "בצע הזמנה";
+
+/* Class = "UIButton"; normalTitle = "הזמן עכשיו"; ObjectID = "brA-88-12b"; */
+"brA-88-12b.normalTitle" = "הזמן עכשיו";
+
+/* Class = "UILabel"; text = "₪ 250"; ObjectID = "cxI-1U-U8t"; */
+"cxI-1U-U8t.text" = "₪ 250";
+
+/* Class = "UIButton"; normalTitle = "הוסף לסל"; ObjectID = "ixo-pD-7DX"; */
+"ixo-pD-7DX.normalTitle" = "הוסף לסל";
+
+/* Class = "UILabel"; text = "מחיר"; ObjectID = "lEt-qa-IRi"; */
+"lEt-qa-IRi.text" = "מחיר";
+
+/* Class = "UILabel"; text = "סה\"כ"; ObjectID = "nCD-LB-nqC"; */
+"nCD-LB-nqC.text" = "סה\"כ";
+
+/* Class = "UILabel"; text = "qty"; ObjectID = "pU8-jK-1me"; */
+"pU8-jK-1me.text" = "qty";
+
+/* Class = "UITextField"; placeholder = "  3 ספרות בגב הכרטיס CVV"; ObjectID = "sfo-hB-0aU"; */
+"sfo-hB-0aU.placeholder" = "  3 ספרות בגב הכרטיס CVV";
+
+/* Class = "UITextField"; placeholder = "כתובת מייל"; ObjectID = "xvQ-br-alV"; */
+"xvQ-br-alV.placeholder" = "כתובת מייל";
+
+/* Class = "UILabel"; text = "Label text"; ObjectID = "zA1-Mz-Kid"; */
+"zA1-Mz-Kid.text" = "Label text";
+
+/* Class = "UILabel"; text = "שם המוצר"; ObjectID = "zOs-8J-Ao9"; */
+"zOs-8J-Ao9.text" = "שם המוצר";

@@ -1,0 +1,413 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataController"
+provides-nominal:
+- "10Pick_n_Pay14DataControllerC"
+provides-member:
+- ["10Pick_n_Pay14DataControllerC", ""]
+provides-dynamic-lookup:
+- "managedObjectContext"
+depends-top-level:
+- !private "-"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- !private "Bundle"
+- "DataController"
+- "Dictionary"
+- !private "DispatchQueue"
+- !private "FileManager"
+- !private "NSInferMappingModelAutomaticallyOption"
+- "NSManagedObjectContext"
+- !private "NSManagedObjectModel"
+- !private "NSMigratePersistentStoresAutomaticallyOption"
+- "NSObject"
+- !private "NSPersistentStoreCoordinator"
+- !private "NSSQLiteStoreType"
+- !private "StringLiteralType"
+- !private "fatalError"
+depends-member:
+- !private ["Sa", "endIndex"]
+- !private ["Sa", "subscript"]
+- !private ["s23BidirectionalCollectionP", "endIndex"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["So6BundleC", "main"]
+- !private ["So6BundleC", "url"]
+- !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "DispatchQueue"]
+- !private ["s7CVarArgP", "FileManager"]
+- !private ["s7CVarArgP", "NSInferMappingModelAutomaticallyOption"]
+- !private ["s7CVarArgP", "NSManagedObjectContext"]
+- !private ["s7CVarArgP", "NSManagedObjectModel"]
+- !private ["s7CVarArgP", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["s7CVarArgP", "NSPersistentStoreCoordinator"]
+- !private ["s7CVarArgP", "NSSQLiteStoreType"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addPersistentStore"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "endIndex"]
+- !private ["s7CVarArgP", "fatalError"]
+- !private ["s7CVarArgP", "global"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "managedObjectContext"]
+- !private ["s7CVarArgP", "persistentStoreCoordinator"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "url"]
+- !private ["s7CVarArgP", "urls"]
+- !private ["s10CollectionP", "endIndex"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "FileManager"]
+- !private ["s28CustomDebugStringConvertibleP", "NSInferMappingModelAutomaticallyOption"]
+- !private ["s28CustomDebugStringConvertibleP", "NSManagedObjectContext"]
+- !private ["s28CustomDebugStringConvertibleP", "NSManagedObjectModel"]
+- !private ["s28CustomDebugStringConvertibleP", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["s28CustomDebugStringConvertibleP", "NSPersistentStoreCoordinator"]
+- !private ["s28CustomDebugStringConvertibleP", "NSSQLiteStoreType"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addPersistentStore"]
+- !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "endIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "fatalError"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "managedObjectContext"]
+- !private ["s28CustomDebugStringConvertibleP", "persistentStoreCoordinator"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s28CustomDebugStringConvertibleP", "urls"]
+- !private ["s29CustomPlaygroundQuickLookableP", "appendingPathComponent"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "endIndex"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- !private ["s23CustomStringConvertibleP", "FileManager"]
+- !private ["s23CustomStringConvertibleP", "NSInferMappingModelAutomaticallyOption"]
+- !private ["s23CustomStringConvertibleP", "NSManagedObjectContext"]
+- !private ["s23CustomStringConvertibleP", "NSManagedObjectModel"]
+- !private ["s23CustomStringConvertibleP", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["s23CustomStringConvertibleP", "NSPersistentStoreCoordinator"]
+- !private ["s23CustomStringConvertibleP", "NSSQLiteStoreType"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addPersistentStore"]
+- !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "endIndex"]
+- !private ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "global"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "managedObjectContext"]
+- !private ["s23CustomStringConvertibleP", "persistentStoreCoordinator"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "url"]
+- !private ["s23CustomStringConvertibleP", "urls"]
+- !private ["10Pick_n_Pay14DataControllerC", "Bundle"]
+- !private ["10Pick_n_Pay14DataControllerC", "DispatchQueue"]
+- !private ["10Pick_n_Pay14DataControllerC", "FileManager"]
+- !private ["10Pick_n_Pay14DataControllerC", "NSInferMappingModelAutomaticallyOption"]
+- ["10Pick_n_Pay14DataControllerC", "NSManagedObjectContext"]
+- !private ["10Pick_n_Pay14DataControllerC", "NSManagedObjectModel"]
+- !private ["10Pick_n_Pay14DataControllerC", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["10Pick_n_Pay14DataControllerC", "NSPersistentStoreCoordinator"]
+- !private ["10Pick_n_Pay14DataControllerC", "NSSQLiteStoreType"]
+- ["10Pick_n_Pay14DataControllerC", "deinit"]
+- !private ["10Pick_n_Pay14DataControllerC", "fatalError"]
+- ["10Pick_n_Pay14DataControllerC", "init"]
+- ["10Pick_n_Pay14DataControllerC", "managedObjectContext"]
+- !private ["s9DecodableP", "appendingPathComponent"]
+- !private ["s9DecodableP", "endIndex"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["So14DispatchObjectC", "async"]
+- !private ["So14DispatchObjectC", "global"]
+- !private ["So13DispatchQueueC", "async"]
+- !private ["So13DispatchQueueC", "global"]
+- !private ["s9EncodableP", "appendingPathComponent"]
+- !private ["s9EncodableP", "endIndex"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "Bundle"]
+- !private ["s9EquatableP", "DispatchQueue"]
+- !private ["s9EquatableP", "FileManager"]
+- !private ["s9EquatableP", "NSInferMappingModelAutomaticallyOption"]
+- !private ["s9EquatableP", "NSManagedObjectContext"]
+- !private ["s9EquatableP", "NSManagedObjectModel"]
+- !private ["s9EquatableP", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["s9EquatableP", "NSPersistentStoreCoordinator"]
+- !private ["s9EquatableP", "NSSQLiteStoreType"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "addPersistentStore"]
+- !private ["s9EquatableP", "appendingPathComponent"]
+- !private ["s9EquatableP", "async"]
+- !private ["s9EquatableP", "background"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "documentDirectory"]
+- !private ["s9EquatableP", "endIndex"]
+- !private ["s9EquatableP", "fatalError"]
+- !private ["s9EquatableP", "global"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "mainQueueConcurrencyType"]
+- !private ["s9EquatableP", "managedObjectContext"]
+- !private ["s9EquatableP", "persistentStoreCoordinator"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "url"]
+- !private ["s9EquatableP", "urls"]
+- !private ["s9EquatableP", "userDomainMask"]
+- !private ["s25ExpressibleByArrayLiteralP", "endIndex"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "userDomainMask"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So11FileManagerC", "default"]
+- !private ["So11FileManagerC", "urls"]
+- !private ["s8HashableP", "Bundle"]
+- !private ["s8HashableP", "DispatchQueue"]
+- !private ["s8HashableP", "FileManager"]
+- !private ["s8HashableP", "NSInferMappingModelAutomaticallyOption"]
+- !private ["s8HashableP", "NSManagedObjectContext"]
+- !private ["s8HashableP", "NSManagedObjectModel"]
+- !private ["s8HashableP", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["s8HashableP", "NSPersistentStoreCoordinator"]
+- !private ["s8HashableP", "NSSQLiteStoreType"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "addPersistentStore"]
+- !private ["s8HashableP", "appendingPathComponent"]
+- !private ["s8HashableP", "async"]
+- !private ["s8HashableP", "background"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "documentDirectory"]
+- !private ["s8HashableP", "fatalError"]
+- !private ["s8HashableP", "global"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "mainQueueConcurrencyType"]
+- !private ["s8HashableP", "managedObjectContext"]
+- !private ["s8HashableP", "persistentStoreCoordinator"]
+- !private ["s8HashableP", "url"]
+- !private ["s8HashableP", "urls"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "endIndex"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "persistentStoreCoordinator"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So17NSFastEnumerationP", "init"]
+- !private ["So9NSLockingP", "addPersistentStore"]
+- !private ["So9NSLockingP", "init"]
+- !private ["So9NSLockingP", "persistentStoreCoordinator"]
+- !private ["So22NSManagedObjectContextC", "init"]
+- !private ["So22NSManagedObjectContextC", "persistentStoreCoordinator"]
+- !private ["SC37NSManagedObjectContextConcurrencyTypeO", "mainQueueConcurrencyType"]
+- !private ["So20NSManagedObjectModelC", "init"]
+- !private ["So8NSObjectC", "Bundle"]
+- !private ["So8NSObjectC", "DispatchQueue"]
+- !private ["So8NSObjectC", "FileManager"]
+- !private ["So8NSObjectC", "NSInferMappingModelAutomaticallyOption"]
+- ["So8NSObjectC", "NSManagedObjectContext"]
+- !private ["So8NSObjectC", "NSManagedObjectModel"]
+- !private ["So8NSObjectC", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["So8NSObjectC", "NSPersistentStoreCoordinator"]
+- !private ["So8NSObjectC", "NSSQLiteStoreType"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "addPersistentStore"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "fatalError"]
+- !private ["So8NSObjectC", "global"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "managedObjectContext"]
+- !private ["So8NSObjectC", "persistentStoreCoordinator"]
+- !private ["So8NSObjectC", "url"]
+- !private ["So8NSObjectC", "urls"]
+- !private ["So16NSObjectProtocolP", "Bundle"]
+- !private ["So16NSObjectProtocolP", "DispatchQueue"]
+- !private ["So16NSObjectProtocolP", "FileManager"]
+- !private ["So16NSObjectProtocolP", "NSInferMappingModelAutomaticallyOption"]
+- !private ["So16NSObjectProtocolP", "NSManagedObjectContext"]
+- !private ["So16NSObjectProtocolP", "NSManagedObjectModel"]
+- !private ["So16NSObjectProtocolP", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["So16NSObjectProtocolP", "NSPersistentStoreCoordinator"]
+- !private ["So16NSObjectProtocolP", "NSSQLiteStoreType"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "addPersistentStore"]
+- !private ["So16NSObjectProtocolP", "async"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "fatalError"]
+- !private ["So16NSObjectProtocolP", "global"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "managedObjectContext"]
+- !private ["So16NSObjectProtocolP", "persistentStoreCoordinator"]
+- !private ["So16NSObjectProtocolP", "url"]
+- !private ["So16NSObjectProtocolP", "urls"]
+- !private ["So28NSPersistentStoreCoordinatorC", "addPersistentStore"]
+- !private ["So28NSPersistentStoreCoordinatorC", "init"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "global"]
+- !private ["s9OptionSetP", "userDomainMask"]
+- !private ["8Dispatch0A3QoSV0B6SClassO", "background"]
+- !private ["s22RandomAccessCollectionP", "endIndex"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "endIndex"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s16RawRepresentableP", "documentDirectory"]
+- !private ["s16RawRepresentableP", "mainQueueConcurrencyType"]
+- !private ["s16RawRepresentableP", "userDomainMask"]
+- !private ["10Foundation20ReferenceConvertibleP", "appendingPathComponent"]
+- !private ["So11FileManagerC19SearchPathDirectoryO", "documentDirectory"]
+- !private ["So11FileManagerC20SearchPathDomainMaskV", "userDomainMask"]
+- !private ["s8SequenceP", "endIndex"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s10SetAlgebraP", "userDomainMask"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["10Foundation3URLV", "appendingPathComponent"]
+- !private ["s14_ArrayProtocolP", "endIndex"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "endIndex"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FileManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSInferMappingModelAutomaticallyOption"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSManagedObjectContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSManagedObjectModel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentStoreCoordinator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSSQLiteStoreType"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addPersistentStore"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "managedObjectContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "persistentStoreCoordinator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "urls"]
+- !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
+- !private ["s21_ObjectiveCBridgeableP", "endIndex"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "So6BundleC"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Pick_n_Pay14DataControllerC"
+- !private "s9DecodableP"
+- !private "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So11FileManagerC"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So17NSFastEnumerationP"
+- !private "So9NSLockingP"
+- !private "So22NSManagedObjectContextC"
+- !private "SC37NSManagedObjectContextConcurrencyTypeO"
+- !private "So20NSManagedObjectModelC"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So28NSPersistentStoreCoordinatorC"
+- !private "So9OS_objectC"
+- !private "s9OptionSetP"
+- !private "8Dispatch0A3QoSV0B6SClassO"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So11FileManagerC19SearchPathDirectoryO"
+- !private "So11FileManagerC20SearchPathDomainMaskV"
+- !private "s8SequenceP"
+- !private "s10SetAlgebraP"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "10Foundation3URLV"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "05a9040caf996a6ce27293b1b9e2dfa6"
