@@ -172,6 +172,7 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
         // totalQuantity equel to items Quantity in the cart
         totalQuantity = itemsQuantity
         totalItems.text = String(" Total Items\(totalQuantity)");
+        UserDefaults.standard.set(totalQuantity, forKey: "totalItems")
         
         // MARK: Total Amount
         var totalPrice = 0
@@ -185,6 +186,7 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
         
        let  totalAmount = totalPrice as NSNumber
         totalCash.text = String("Total Amount:R \(totalAmount) ");
+        UserDefaults.standard.set(totalAmount, forKey: "tot")
 
     }
     
@@ -211,8 +213,11 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
     
     // MARK: - Order Button
     @IBAction func performOrderBtn(_ sender: AnyObject) {
+        
         // If product quantity equal to 0 delete from listItems
         var indexPath = 0
+        var product = ""
+        
         // itemsQuantity - Keeps cell numbering during the test. If a cell is deleted it does not affect further testing.
         var itemsQuantity = [NSManagedObject]()
         itemsQuantity = listItems
@@ -235,8 +240,10 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
             print("Failed to save");
             return;
         }
+        
+      
+        }
 
-    }
     
     // Pass the total Amount to checkout screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

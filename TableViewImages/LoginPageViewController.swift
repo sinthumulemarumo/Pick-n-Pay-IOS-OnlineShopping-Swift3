@@ -27,12 +27,13 @@ class LoginPageViewController: UIViewController {
         
         let userName = userNameTextField.text;
         let password = passwordTextField.text;
-
-       
+      
         if(userName?.isEmpty)! || (password?.isEmpty)!{
             displayMyAlertMessage(userMessage:"Invalid Details, Please Make sure Password and Username are Correct");
             return
         }
+        
+      //Connect to the DB.
         
         let myURL = NSURL(string: "https://leary-bricks.000webhostapp.com/Login.php")
         let request = NSMutableURLRequest(url: myURL! as URL)
@@ -52,11 +53,21 @@ class LoginPageViewController: UIViewController {
                 
                 print("response =\(String(describing: response))")
             let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-                print("ResponseString =\(String(describing: responseString))")
-                print(responseString)
+                //print("ResponseString =\(String(describing: responseString))")
+            
+            let replaced = responseString!.replacingOccurrences(of: "Optional(\"Optional(", with: "");
+            let username_test = replaced.replacingOccurrences(of: ")", with: "");
+            let username = username_test.replacingOccurrences(of: "Optional(", with: "");
+          let firstName = username.replacingOccurrences(of: "\"", with: "")
+           print(firstName);
+            
+            UserDefaults.standard.set(firstName, forKey: "Username")
             
             DispatchQueue.main.async{
-                if(responseString?.isEqual(to: "Successfully Logged-in"))!{
+                if(responseString != "Incorrect Details"){
+                   
+                    
+
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let navigationController = storyBoard.instantiateViewController(withIdentifier: "root view controller") as! UINavigationController
                     self.present(navigationController, animated: true, completion: nil)
@@ -93,6 +104,14 @@ class LoginPageViewController: UIViewController {
         
         
     }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if segue.identifier == "Address View"{
+//            let client: AddressViewController = segue.destination as! AddressViewController
+//            client.userName = username
+//        }
+//
+//    }
     
     /*
     // MARK: - Navigation

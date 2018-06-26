@@ -22,8 +22,14 @@ class AddressViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     @IBOutlet weak var CityTextField: UITextField!
     @IBOutlet weak var ZipCodetextField: UITextField!
     
+   // var userName:String!
+    
     override func viewDidLoad() {
         title = "Details of the Client "
+        
+       
+        
+        //FirstNameTextField.text = a
         addToolBarToView(CommentsTextView)
     }
     

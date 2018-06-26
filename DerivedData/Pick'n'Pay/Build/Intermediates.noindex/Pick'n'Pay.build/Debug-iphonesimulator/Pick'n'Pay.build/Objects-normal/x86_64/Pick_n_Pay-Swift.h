@@ -256,6 +256,7 @@ SWIFT_CLASS("_TtC10Pick_n_Pay16CheckoutViewCell")
 
 SWIFT_CLASS("_TtC10Pick_n_Pay22CheckoutViewController")
 @interface CheckoutViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic) NSInteger totalCartAmountAll;
 @property (nonatomic, readonly, strong) NSManagedObjectContext * _Nonnull moc;
 @property (nonatomic, copy) NSArray<NSManagedObject *> * _Nonnull listItems;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
@@ -270,6 +271,21 @@ SWIFT_CLASS("_TtC10Pick_n_Pay22CheckoutViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)ShippingOption:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Pick_n_Pay26ConfirmationViewController")
+@interface ConfirmationViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified zipTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified cityTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified deliveryTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified phoneTextField;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)submitBtnPressed:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -306,6 +322,31 @@ SWIFT_CLASS("_TtC10Pick_n_Pay23LoginPageViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)loginBtn:(id _Nonnull)sender;
+- (NSString * _Nonnull)displayMyAlertMessageWithUserMessage:(NSString * _Nonnull)userMessage SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Pick_n_Pay22Payment2ViewController")
+@interface Payment2ViewController : UIViewController
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull array;
+- (IBAction)homeBtnPressed:(id _Nonnull)sender;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified cityTextField;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified productTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified zipTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified shippingTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified totalItemsTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified totalAmtTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified phoneTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified firstNameTextField;
+@property (nonatomic, copy) NSArray<NSManagedObject *> * _Nonnull listItems;
+@property (nonatomic, readonly, strong) NSManagedObjectContext * _Nonnull moc;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
+- (IBAction)paymentBtnPressed:(id _Nonnull)sender;
 - (NSString * _Nonnull)displayMyAlertMessageWithUserMessage:(NSString * _Nonnull)userMessage SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

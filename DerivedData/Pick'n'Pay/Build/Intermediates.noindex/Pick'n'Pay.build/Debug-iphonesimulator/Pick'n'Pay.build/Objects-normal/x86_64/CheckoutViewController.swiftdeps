@@ -16,6 +16,7 @@ provides-dynamic-lookup:
 - "switchButton"
 - "tableView"
 - "totalCartAmount"
+- "totalCartAmountAll"
 - "viewDidLoad"
 - "viewWillAppear"
 depends-top-level:
@@ -35,7 +36,7 @@ depends-top-level:
 - !private "NSFetchRequestResult"
 - "NSManagedObject"
 - !private "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - !private "TableViewController"
 - !private "UIBarButtonItem"
 - !private "UIBarButtonItemStyle"
@@ -47,6 +48,7 @@ depends-top-level:
 - "UITableViewDataSource"
 - "UITableViewDelegate"
 - "UIViewController"
+- "UserDefaults"
 - !private "print"
 depends-member:
 - !private ["Sa", "count"]
@@ -72,9 +74,9 @@ depends-member:
 - !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIBarButtonItemStyle"]
 - !private ["s7CVarArgP", "UIImage"]
+- ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "allProductsTotal"]
 - !private ["s7CVarArgP", "alpha"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "deliveryPrice"]
@@ -86,10 +88,12 @@ depends-member:
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
+- ["s7CVarArgP", "integer"]
 - !private ["s7CVarArgP", "isOn"]
 - !private ["s7CVarArgP", "listItems"]
 - ["s7CVarArgP", "managedObjectContext"]
 - !private ["s7CVarArgP", "moc"]
+- !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "navigationItem"]
 - ["s7CVarArgP", "numberOfSections"]
@@ -112,7 +116,9 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
+- !private ["s7CVarArgP", "set"]
 - !private ["s7CVarArgP", "show"]
+- ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "storyboard"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "switchButton"]
@@ -120,6 +126,7 @@ depends-member:
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "totalCartAmount"]
+- !private ["s7CVarArgP", "totalCartAmountAll"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["10Pick_n_Pay16CheckoutViewCellC", "SetProductAttribute"]
@@ -144,6 +151,7 @@ depends-member:
 - ["10Pick_n_Pay22CheckoutViewControllerC", "UISwitch"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "UITableView"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "UITableViewCell"]
+- ["10Pick_n_Pay22CheckoutViewControllerC", "UserDefaults"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "allProductsTotal"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "deinit"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "deliveryPrice"]
@@ -179,6 +187,7 @@ depends-member:
 - ["10Pick_n_Pay22CheckoutViewControllerC", "tableView"]
 - !private ["10Pick_n_Pay22CheckoutViewControllerC", "title"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "totalCartAmount"]
+- ["10Pick_n_Pay22CheckoutViewControllerC", "totalCartAmountAll"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "viewDidLoad"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "viewForZooming"]
 - ["10Pick_n_Pay22CheckoutViewControllerC", "viewForZoomingInScrollView"]
@@ -187,7 +196,7 @@ depends-member:
 - ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "row"]
 - !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "init"]
+- ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "CheckoutViewController"]
 - ["s28CustomDebugStringConvertibleP", "DataController"]
@@ -198,8 +207,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItemStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "allProductsTotal"]
 - !private ["s28CustomDebugStringConvertibleP", "alpha"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "deliveryPrice"]
@@ -211,10 +220,12 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- ["s28CustomDebugStringConvertibleP", "integer"]
 - !private ["s28CustomDebugStringConvertibleP", "isOn"]
 - !private ["s28CustomDebugStringConvertibleP", "listItems"]
 - ["s28CustomDebugStringConvertibleP", "managedObjectContext"]
 - !private ["s28CustomDebugStringConvertibleP", "moc"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
@@ -238,7 +249,9 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
 - !private ["s28CustomDebugStringConvertibleP", "show"]
+- ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "storyboard"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "switchButton"]
@@ -246,10 +259,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "totalCartAmount"]
+- !private ["s28CustomDebugStringConvertibleP", "totalCartAmountAll"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
 - ["s17CustomReflectableP", "init"]
@@ -264,9 +278,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItemStyle"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
+- ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s23CustomStringConvertibleP", "allProductsTotal"]
 - !private ["s23CustomStringConvertibleP", "alpha"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "deliveryPrice"]
@@ -278,10 +292,12 @@ depends-member:
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- ["s23CustomStringConvertibleP", "integer"]
 - !private ["s23CustomStringConvertibleP", "isOn"]
 - !private ["s23CustomStringConvertibleP", "listItems"]
 - ["s23CustomStringConvertibleP", "managedObjectContext"]
 - !private ["s23CustomStringConvertibleP", "moc"]
+- !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "navigationItem"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
@@ -305,7 +321,9 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s23CustomStringConvertibleP", "set"]
 - !private ["s23CustomStringConvertibleP", "show"]
+- ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "storyboard"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "switchButton"]
@@ -313,6 +331,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "totalCartAmount"]
+- !private ["s23CustomStringConvertibleP", "totalCartAmountAll"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - ["10Pick_n_Pay14DataControllerC", "init"]
@@ -336,9 +355,9 @@ depends-member:
 - !private ["s9EquatableP", "UIBarButtonItem"]
 - !private ["s9EquatableP", "UIBarButtonItemStyle"]
 - !private ["s9EquatableP", "UIImage"]
+- ["s9EquatableP", "UserDefaults"]
 - ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "allProductsTotal"]
 - !private ["s9EquatableP", "alpha"]
 - !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "deliveryPrice"]
@@ -350,10 +369,12 @@ depends-member:
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "instantiateViewController"]
+- ["s9EquatableP", "integer"]
 - !private ["s9EquatableP", "isOn"]
 - !private ["s9EquatableP", "listItems"]
 - ["s9EquatableP", "managedObjectContext"]
 - !private ["s9EquatableP", "moc"]
+- !private ["s9EquatableP", "name"]
 - !private ["s9EquatableP", "navigationController"]
 - !private ["s9EquatableP", "navigationItem"]
 - ["s9EquatableP", "numberOfSections"]
@@ -378,7 +399,9 @@ depends-member:
 - ["s9EquatableP", "scrollViewWillEndDragging"]
 - ["s9EquatableP", "sectionIndexTitles"]
 - ["s9EquatableP", "sectionIndexTitlesForTableView"]
+- !private ["s9EquatableP", "set"]
 - !private ["s9EquatableP", "show"]
+- ["s9EquatableP", "standard"]
 - !private ["s9EquatableP", "storyboard"]
 - !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "switchButton"]
@@ -386,6 +409,7 @@ depends-member:
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "totalCartAmount"]
+- !private ["s9EquatableP", "totalCartAmountAll"]
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -393,9 +417,9 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s8HashableP", "CheckoutViewController"]
 - ["s8HashableP", "DataController"]
 - !private ["s8HashableP", "NSFetchRequest"]
@@ -405,9 +429,9 @@ depends-member:
 - !private ["s8HashableP", "UIBarButtonItem"]
 - !private ["s8HashableP", "UIBarButtonItemStyle"]
 - !private ["s8HashableP", "UIImage"]
+- ["s8HashableP", "UserDefaults"]
 - ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "allProductsTotal"]
 - !private ["s8HashableP", "alpha"]
 - !private ["s8HashableP", "deliveryPrice"]
 - !private ["s8HashableP", "deliveryPriceNumber"]
@@ -418,10 +442,12 @@ depends-member:
 - ["s8HashableP", "indexPathForPreferredFocusedViewInTableView"]
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "instantiateViewController"]
+- ["s8HashableP", "integer"]
 - !private ["s8HashableP", "isOn"]
 - !private ["s8HashableP", "listItems"]
 - ["s8HashableP", "managedObjectContext"]
 - !private ["s8HashableP", "moc"]
+- !private ["s8HashableP", "name"]
 - !private ["s8HashableP", "navigationController"]
 - !private ["s8HashableP", "navigationItem"]
 - ["s8HashableP", "numberOfSections"]
@@ -446,19 +472,23 @@ depends-member:
 - ["s8HashableP", "scrollViewWillEndDragging"]
 - ["s8HashableP", "sectionIndexTitles"]
 - ["s8HashableP", "sectionIndexTitlesForTableView"]
+- !private ["s8HashableP", "set"]
 - !private ["s8HashableP", "show"]
+- ["s8HashableP", "standard"]
 - !private ["s8HashableP", "storyboard"]
 - !private ["s8HashableP", "switchButton"]
 - ["s8HashableP", "tableView"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "totalCartAmount"]
+- !private ["s8HashableP", "totalCartAmountAll"]
 - ["s8HashableP", "viewForZooming"]
 - ["s8HashableP", "viewForZoomingInScrollView"]
 - !private ["10Foundation9IndexPathV", "row"]
+- !private ["10Pick_n_Pay4ItemC", "name"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "count"]
 - ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "row"]
@@ -472,8 +502,8 @@ depends-member:
 - !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIBarButtonItemStyle"]
 - !private ["So8NSCodingP", "UIImage"]
+- ["So8NSCodingP", "UserDefaults"]
 - ["So8NSCodingP", ""]
-- !private ["So8NSCodingP", "allProductsTotal"]
 - !private ["So8NSCodingP", "alpha"]
 - !private ["So8NSCodingP", "deliveryPrice"]
 - !private ["So8NSCodingP", "deliveryPriceNumber"]
@@ -515,6 +545,7 @@ depends-member:
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "totalCartAmount"]
+- !private ["So8NSCodingP", "totalCartAmountAll"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So9NSCopyingP", "init"]
@@ -526,8 +557,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItemStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
+- ["So26NSExtensionRequestHandlingP", "UserDefaults"]
 - ["So26NSExtensionRequestHandlingP", ""]
-- !private ["So26NSExtensionRequestHandlingP", "allProductsTotal"]
 - !private ["So26NSExtensionRequestHandlingP", "deliveryPrice"]
 - !private ["So26NSExtensionRequestHandlingP", "deliveryPriceNumber"]
 - !private ["So26NSExtensionRequestHandlingP", "homeScreen"]
@@ -562,12 +593,15 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "title"]
 - !private ["So26NSExtensionRequestHandlingP", "totalCartAmount"]
+- !private ["So26NSExtensionRequestHandlingP", "totalCartAmountAll"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - !private ["So14NSFetchRequestC", "init"]
+- !private ["So20NSFetchRequestResultP", "name"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So9NSLockingP", "fetch"]
+- !private ["So15NSManagedObjectC", "name"]
 - !private ["So22NSManagedObjectContextC", "fetch"]
 - ["So8NSObjectC", "AnyObject"]
 - ["So8NSObjectC", "Bool"]
@@ -591,6 +625,7 @@ depends-member:
 - ["So8NSObjectC", "UISwitch"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "UserDefaults"]
 - ["So8NSObjectC", "allProductsTotal"]
 - !private ["So8NSObjectC", "alpha"]
 - ["So8NSObjectC", "deliveryPrice"]
@@ -602,10 +637,12 @@ depends-member:
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
+- ["So8NSObjectC", "integer"]
 - !private ["So8NSObjectC", "isOn"]
 - ["So8NSObjectC", "listItems"]
 - ["So8NSObjectC", "managedObjectContext"]
 - ["So8NSObjectC", "moc"]
+- !private ["So8NSObjectC", "name"]
 - !private ["So8NSObjectC", "navigationController"]
 - !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "numberOfSections"]
@@ -628,13 +665,16 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectC", "set"]
 - !private ["So8NSObjectC", "show"]
+- ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "storyboard"]
 - ["So8NSObjectC", "switchButton"]
 - ["So8NSObjectC", "tableView"]
 - !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "totalCartAmount"]
+- ["So8NSObjectC", "totalCartAmountAll"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
@@ -648,8 +688,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIBarButtonItem"]
 - !private ["So16NSObjectProtocolP", "UIBarButtonItemStyle"]
 - !private ["So16NSObjectProtocolP", "UIImage"]
+- ["So16NSObjectProtocolP", "UserDefaults"]
 - ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "allProductsTotal"]
 - !private ["So16NSObjectProtocolP", "alpha"]
 - !private ["So16NSObjectProtocolP", "deliveryPrice"]
 - !private ["So16NSObjectProtocolP", "deliveryPriceNumber"]
@@ -660,10 +700,12 @@ depends-member:
 - ["So16NSObjectProtocolP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- ["So16NSObjectProtocolP", "integer"]
 - !private ["So16NSObjectProtocolP", "isOn"]
 - !private ["So16NSObjectProtocolP", "listItems"]
 - ["So16NSObjectProtocolP", "managedObjectContext"]
 - !private ["So16NSObjectProtocolP", "moc"]
+- !private ["So16NSObjectProtocolP", "name"]
 - !private ["So16NSObjectProtocolP", "navigationController"]
 - !private ["So16NSObjectProtocolP", "navigationItem"]
 - ["So16NSObjectProtocolP", "numberOfSections"]
@@ -686,13 +728,16 @@ depends-member:
 - ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
 - ["So16NSObjectProtocolP", "sectionIndexTitles"]
 - ["So16NSObjectProtocolP", "sectionIndexTitlesForTableView"]
+- !private ["So16NSObjectProtocolP", "set"]
 - !private ["So16NSObjectProtocolP", "show"]
+- ["So16NSObjectProtocolP", "standard"]
 - !private ["So16NSObjectProtocolP", "storyboard"]
 - !private ["So16NSObjectProtocolP", "switchButton"]
 - ["So16NSObjectProtocolP", "tableView"]
 - !private ["So16NSObjectProtocolP", "text"]
 - !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "totalCartAmount"]
+- !private ["So16NSObjectProtocolP", "totalCartAmountAll"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
 - !private ["So14NSSecureCodingP", "init"]
@@ -709,10 +754,10 @@ depends-member:
 - ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "row"]
 - !private ["s8SequenceP", "subscript"]
-- !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "SetProductAttribute"]
 - !private ["So29UIAccessibilityIdentificationP", "alpha"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
@@ -736,8 +781,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UIBarButtonItemStyle"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
+- ["So21UIAppearanceContainerP", "UserDefaults"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So21UIAppearanceContainerP", "allProductsTotal"]
 - !private ["So21UIAppearanceContainerP", "alpha"]
 - !private ["So21UIAppearanceContainerP", "deliveryPrice"]
 - !private ["So21UIAppearanceContainerP", "deliveryPriceNumber"]
@@ -777,6 +822,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "title"]
 - !private ["So21UIAppearanceContainerP", "totalCartAmount"]
+- !private ["So21UIAppearanceContainerP", "totalCartAmountAll"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - !private ["So15UIBarButtonItemC", "init"]
@@ -790,8 +836,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UIBarButtonItemStyle"]
 - !private ["So18UIContentContainerP", "UIImage"]
+- ["So18UIContentContainerP", "UserDefaults"]
 - ["So18UIContentContainerP", ""]
-- !private ["So18UIContentContainerP", "allProductsTotal"]
 - !private ["So18UIContentContainerP", "deliveryPrice"]
 - !private ["So18UIContentContainerP", "deliveryPriceNumber"]
 - !private ["So18UIContentContainerP", "homeScreen"]
@@ -826,6 +872,7 @@ depends-member:
 - ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "title"]
 - !private ["So18UIContentContainerP", "totalCartAmount"]
+- !private ["So18UIContentContainerP", "totalCartAmountAll"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "alpha"]
@@ -854,8 +901,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UIBarButtonItemStyle"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
+- ["So18UIFocusEnvironmentP", "UserDefaults"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So18UIFocusEnvironmentP", "allProductsTotal"]
 - !private ["So18UIFocusEnvironmentP", "alpha"]
 - !private ["So18UIFocusEnvironmentP", "deliveryPrice"]
 - !private ["So18UIFocusEnvironmentP", "deliveryPriceNumber"]
@@ -895,6 +942,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "title"]
 - !private ["So18UIFocusEnvironmentP", "totalCartAmount"]
+- !private ["So18UIFocusEnvironmentP", "totalCartAmountAll"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So11UIFocusItemP", "SetProductAttribute"]
@@ -919,8 +967,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItemStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "allProductsTotal"]
 - !private ["So30UIPasteConfigurationSupportingP", "alpha"]
 - !private ["So30UIPasteConfigurationSupportingP", "deliveryPrice"]
 - !private ["So30UIPasteConfigurationSupportingP", "deliveryPriceNumber"]
@@ -960,6 +1008,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "totalCartAmount"]
+- !private ["So30UIPasteConfigurationSupportingP", "totalCartAmountAll"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "AnyObject"]
@@ -984,6 +1033,7 @@ depends-member:
 - ["So11UIResponderC", "UISwitch"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- ["So11UIResponderC", "UserDefaults"]
 - ["So11UIResponderC", "allProductsTotal"]
 - !private ["So11UIResponderC", "alpha"]
 - ["So11UIResponderC", "deliveryPrice"]
@@ -1024,6 +1074,7 @@ depends-member:
 - !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "title"]
 - ["So11UIResponderC", "totalCartAmount"]
+- ["So11UIResponderC", "totalCartAmountAll"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
@@ -1037,8 +1088,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItemStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So30UIResponderStandardEditActionsP", "allProductsTotal"]
 - !private ["So30UIResponderStandardEditActionsP", "alpha"]
 - !private ["So30UIResponderStandardEditActionsP", "deliveryPrice"]
 - !private ["So30UIResponderStandardEditActionsP", "deliveryPriceNumber"]
@@ -1078,6 +1129,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "title"]
 - !private ["So30UIResponderStandardEditActionsP", "totalCartAmount"]
+- !private ["So30UIResponderStandardEditActionsP", "totalCartAmountAll"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
@@ -1090,8 +1142,8 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
 - !private ["So20UIScrollViewDelegateP", "UIBarButtonItemStyle"]
 - !private ["So20UIScrollViewDelegateP", "UIImage"]
+- ["So20UIScrollViewDelegateP", "UserDefaults"]
 - ["So20UIScrollViewDelegateP", ""]
-- !private ["So20UIScrollViewDelegateP", "allProductsTotal"]
 - !private ["So20UIScrollViewDelegateP", "deliveryPrice"]
 - !private ["So20UIScrollViewDelegateP", "deliveryPriceNumber"]
 - !private ["So20UIScrollViewDelegateP", "homeScreen"]
@@ -1124,6 +1176,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "title"]
 - !private ["So20UIScrollViewDelegateP", "totalCartAmount"]
+- !private ["So20UIScrollViewDelegateP", "totalCartAmountAll"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
@@ -1137,8 +1190,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UIBarButtonItemStyle"]
 - !private ["So16UIStateRestoringP", "UIImage"]
+- ["So16UIStateRestoringP", "UserDefaults"]
 - ["So16UIStateRestoringP", ""]
-- !private ["So16UIStateRestoringP", "allProductsTotal"]
 - !private ["So16UIStateRestoringP", "deliveryPrice"]
 - !private ["So16UIStateRestoringP", "deliveryPriceNumber"]
 - !private ["So16UIStateRestoringP", "homeScreen"]
@@ -1173,6 +1226,7 @@ depends-member:
 - ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "title"]
 - !private ["So16UIStateRestoringP", "totalCartAmount"]
+- !private ["So16UIStateRestoringP", "totalCartAmountAll"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
@@ -1188,8 +1242,8 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "UIBarButtonItem"]
 - !private ["So21UITableViewDataSourceP", "UIBarButtonItemStyle"]
 - !private ["So21UITableViewDataSourceP", "UIImage"]
+- ["So21UITableViewDataSourceP", "UserDefaults"]
 - ["So21UITableViewDataSourceP", ""]
-- !private ["So21UITableViewDataSourceP", "allProductsTotal"]
 - !private ["So21UITableViewDataSourceP", "deliveryPrice"]
 - !private ["So21UITableViewDataSourceP", "deliveryPriceNumber"]
 - !private ["So21UITableViewDataSourceP", "homeScreen"]
@@ -1222,6 +1276,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "title"]
 - !private ["So21UITableViewDataSourceP", "totalCartAmount"]
+- !private ["So21UITableViewDataSourceP", "totalCartAmountAll"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
 - !private ["So19UITableViewDelegateP", "CheckoutViewController"]
@@ -1232,8 +1287,8 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "UIBarButtonItem"]
 - !private ["So19UITableViewDelegateP", "UIBarButtonItemStyle"]
 - !private ["So19UITableViewDelegateP", "UIImage"]
+- ["So19UITableViewDelegateP", "UserDefaults"]
 - ["So19UITableViewDelegateP", ""]
-- !private ["So19UITableViewDelegateP", "allProductsTotal"]
 - !private ["So19UITableViewDelegateP", "deliveryPrice"]
 - !private ["So19UITableViewDelegateP", "deliveryPriceNumber"]
 - !private ["So19UITableViewDelegateP", "homeScreen"]
@@ -1266,6 +1321,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "title"]
 - !private ["So19UITableViewDelegateP", "totalCartAmount"]
+- !private ["So19UITableViewDelegateP", "totalCartAmountAll"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "CheckoutViewController"]
@@ -1277,8 +1333,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UIBarButtonItemStyle"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
+- ["So18UITraitEnvironmentP", "UserDefaults"]
 - ["So18UITraitEnvironmentP", ""]
-- !private ["So18UITraitEnvironmentP", "allProductsTotal"]
 - !private ["So18UITraitEnvironmentP", "alpha"]
 - !private ["So18UITraitEnvironmentP", "deliveryPrice"]
 - !private ["So18UITraitEnvironmentP", "deliveryPriceNumber"]
@@ -1318,6 +1374,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "title"]
 - !private ["So18UITraitEnvironmentP", "totalCartAmount"]
+- !private ["So18UITraitEnvironmentP", "totalCartAmountAll"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So6UIViewC", "SetProductAttribute"]
@@ -1347,6 +1404,7 @@ depends-member:
 - ["So16UIViewControllerC", "UISwitch"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
+- ["So16UIViewControllerC", "UserDefaults"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "allProductsTotal"]
 - ["So16UIViewControllerC", "deliveryPrice"]
@@ -1383,10 +1441,14 @@ depends-member:
 - ["So16UIViewControllerC", "tableView"]
 - !private ["So16UIViewControllerC", "title"]
 - ["So16UIViewControllerC", "totalCartAmount"]
+- ["So16UIViewControllerC", "totalCartAmountAll"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", "viewWillAppear"]
+- ["So12UserDefaultsC", "integer"]
+- !private ["So12UserDefaultsC", "set"]
+- ["So12UserDefaultsC", "standard"]
 - !private ["s14_ArrayProtocolP", "count"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
@@ -1400,12 +1462,12 @@ depends-member:
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CheckoutViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DataController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSFetchRequest"]
@@ -1415,8 +1477,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItemStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "allProductsTotal"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "alpha"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deliveryPrice"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deliveryPriceNumber"]
@@ -1427,10 +1489,12 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInTableView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "integer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isOn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "listItems"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "managedObjectContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "moc"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
@@ -1453,13 +1517,16 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "switchButton"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "totalCartAmount"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "totalCartAmountAll"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
@@ -1467,7 +1534,7 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
 - "s23BidirectionalCollectionP"
@@ -1477,9 +1544,9 @@ depends-nominal:
 - !private "10Pick_n_Pay16CheckoutViewCellC"
 - "10Pick_n_Pay22CheckoutViewControllerC"
 - "s10CollectionP"
-- !private "s10ComparableP"
+- "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
+- "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "10Pick_n_Pay14DataControllerC"
@@ -1488,21 +1555,24 @@ depends-nominal:
 - "s9EquatableP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
 - !private "10Foundation9IndexPathV"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
+- !private "10Pick_n_Pay4ItemC"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
 - "s17MutableCollectionP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So14NSFetchRequestC"
+- !private "So20NSFetchRequestResultP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - !private "So9NSLockingP"
+- !private "So15NSManagedObjectC"
 - !private "So22NSManagedObjectContextC"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
@@ -1512,10 +1582,10 @@ depends-nominal:
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - "s8SequenceP"
-- !private "SS"
-- !private "s14StringProtocolP"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -1552,19 +1622,20 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- "So12UserDefaultsC"
 - "s14_ArrayProtocolP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- "s33_ExpressibleByStringInterpolationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s16_SwiftStringViewP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -1592,4 +1663,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "080d0de930626494ec48bc6572005bcc"
+interface-hash: "c9d637ac8e0fdd8c0ad64c47192b30ec"

@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class CheckoutViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+ var totalCartAmountAll = UserDefaults.standard.integer(forKey: "tot")
     let moc = DataController().managedObjectContext;
     var listItems = [NSManagedObject]();
     
@@ -25,6 +25,7 @@ class CheckoutViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         title = " Confirm Order "
+        UserDefaults.standard.integer(forKey: "tot")
         
         // Retrieve the data from Core Data
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Item");
@@ -45,7 +46,7 @@ class CheckoutViewController: UIViewController, UITableViewDataSource, UITableVi
         
         self.navigationItem.rightBarButtonItem = cartButton;
         
-        totalCartAmount.text = "R \(String(allProductsTotal + deliveryPrice))"
+        totalCartAmount.text = "R \(String(totalCartAmountAll))"
     }
     
     // Go to Home screen
@@ -59,10 +60,14 @@ class CheckoutViewController: UIViewController, UITableViewDataSource, UITableVi
         
         // Retrieve the data from Core Data
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Item");
+     
+        
+        
         
         do{
             let results = try moc.fetch(fetchRequest);
             listItems = results as! [NSManagedObject];
+        
         }
         catch{
             print("Data didn not Retrieve");
@@ -80,7 +85,8 @@ class CheckoutViewController: UIViewController, UITableViewDataSource, UITableVi
         //let firstViewController = storyboard.instantiateViewController(withIdentifier: "shopping cart view") as! ShoppingCartViewController;
         
         //allProductsTotal =  firstViewController.totalAmount
-        totalCartAmount.text = "R \(String(allProductsTotal + deliveryPrice))"
+        let me = UserDefaults.standard.integer(forKey: "tot")
+        totalCartAmount.text = "R \(String(me + deliveryPrice))"
     }
 
     // MARK: - TableView display
@@ -97,7 +103,12 @@ class CheckoutViewController: UIViewController, UITableViewDataSource, UITableVi
         
         // Pull the data from the database and display it in the cell
         let item = listItems[indexPath.row] as! Item;
+        let itemname = item.name
+       UserDefaults.standard.set(itemname, forKey: "fortune")
         
+    //UserDefaults.standard.set(itemname, forKey: "itemName")
+        print(itemname)
+        //cell.title.text = carmake[indexPath.item + 1] + carmake[indexPath.item + 2]
         cell.SetProductAttribute(item)
         
         return cell
@@ -106,13 +117,24 @@ class CheckoutViewController: UIViewController, UITableViewDataSource, UITableVi
     // MARK: - Swich Button
     @IBAction func ShippingOption(_ sender: AnyObject) {
         // When it's on delivery fees will be added to the total price
+        
+        var total = 0
         if switchButton.isOn{
-            totalCartAmount.text = "R \(String(allProductsTotal + deliveryPrice))"
+           // totalCartAmount.text = "R \(String(allProductsTotal + deliveryPrice))"
             deliveryPriceNumber.alpha = 1;
+           total = totalCartAmountAll + deliveryPrice
+            totalCartAmount.text = "R \(String(total))"
+            
+            UserDefaults.standard.set(total, forKey: "totalCartAmountAll")
         }else{
-            totalCartAmount.text = "R \(String(allProductsTotal))"
-            deliveryPriceNumber.alpha = 0.2;
+           // totalCartAmount.text = "R \(String(allProductsTotal))"
+            total = totalCartAmountAll
+            UserDefaults.standard.set(total, forKey: "totalCartAmountAll")
+            totalCartAmount.text = "R \(String(total))"
+           // deliveryPriceNumber.alpha = 0.2;
         }
+        
+        
         
     }
     

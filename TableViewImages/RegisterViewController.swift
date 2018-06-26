@@ -71,7 +71,7 @@ class RegisterViewController: UIViewController {
         let myURL = NSURL(string: "https://leary-bricks.000webhostapp.com/RegisterFinalIOS.php")
         let request = NSMutableURLRequest(url: myURL! as URL)
        request.httpMethod = "POST"
-        let postString = "firstName=\(firstName) &lastName=\(lastNamel) &password=\(password) &emailAddress=\(emailAddress) &resAddress=\(residentialAddress) &contactNumber=\(contactNumber) &userName=\(userName)"
+        let postString = "firstName=\(String(describing: firstName)) &lastName=\(String(describing: lastNamel)) &password=\(String(describing: password)) &emailAddress=\(String(describing: emailAddress)) &resAddress=\(residentialAddress) &contactNumber=\(String(describing: contactNumber)) &userName=\(String(describing: userName))"
         request.httpBody = postString.data(using: String.Encoding.utf8)
         
        let task = URLSession.shared.dataTask(with: request as URLRequest){

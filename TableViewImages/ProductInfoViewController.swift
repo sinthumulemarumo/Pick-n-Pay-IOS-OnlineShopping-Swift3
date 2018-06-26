@@ -107,6 +107,7 @@ class ProductInfoViewController: UIViewController {
                 productFound = setTitle
                 indexPath = i
                 //print("Product Exists \n\(productFound)")
+                
             }
         }
         
@@ -118,6 +119,7 @@ class ProductInfoViewController: UIViewController {
             let entityDescription = NSEntityDescription.entity(forEntityName: "Item", in: moc);
             let item = Item(entity: entityDescription!, insertInto: moc);
             item.name = prodactName.text;
+            
             item.image = UIImagePNGRepresentation(prodactImage.image!);
             item.displayPrice = prodactPrice.text;
             let roundPrice = prodactData[2]
@@ -219,7 +221,7 @@ class ProductInfoViewController: UIViewController {
     // Alert Box - Show the alert with animation
     func showAlert(){
         alertBox.isHidden=false
-        UIView.animate(withDuration: 6, animations: {
+        UIView.animate(withDuration: 15, animations: {
             self.alertBox.alpha=0;//slow fade out
         });
     }

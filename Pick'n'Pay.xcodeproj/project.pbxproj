@@ -30,6 +30,8 @@
 		03BA7BDB1D256EE200D74B3D /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA7BDA1D256EE200D74B3D /* PaymentViewController.swift */; };
 		03D9DE8D1CA4766C0027919D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9DE8C1CA4766C0027919D /* DataController.swift */; };
 		03F20D721C88A7D400D3C442 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F20D711C88A7D400D3C442 /* ProductInfoViewController.swift */; };
+		1B828D8920DD36AF00B65FB9 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B828D8820DD36AF00B65FB9 /* ConfirmationViewController.swift */; };
+		1B828D8B20DD36C500B65FB9 /* Payment2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B828D8A20DD36C500B65FB9 /* Payment2ViewController.swift */; };
 		1BE7172A20D255C4003999F4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7172920D255C4003999F4 /* RegisterViewController.swift */; };
 		1BE7172C20D255DD003999F4 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7172B20D255DD003999F4 /* LoginPageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +87,8 @@
 		03F20D711C88A7D400D3C442 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
 		1B80A9C920C6B3280054A171 /* en-ZA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-ZA"; path = "en-ZA.lproj/Main.strings"; sourceTree = "<group>"; };
 		1B80A9CA20C6B3280054A171 /* en-ZA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-ZA"; path = "en-ZA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1B828D8820DD36AF00B65FB9 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		1B828D8A20DD36C500B65FB9 /* Payment2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment2ViewController.swift; sourceTree = "<group>"; };
 		1BE7172920D255C4003999F4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1BE7172B20D255DD003999F4 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +145,8 @@
 		03547CD71C7333080075B825 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B828D8A20DD36C500B65FB9 /* Payment2ViewController.swift */,
+				1B828D8820DD36AF00B65FB9 /* ConfirmationViewController.swift */,
 				1BE7172B20D255DD003999F4 /* LoginPageViewController.swift */,
 				03547CD81C7333080075B825 /* AppDelegate.swift */,
 				1BE7172920D255C4003999F4 /* RegisterViewController.swift */,
@@ -335,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B828D8920DD36AF00B65FB9 /* ConfirmationViewController.swift in Sources */,
 				039902C51D046B01002025ED /* ShoppingCartViewCell.swift in Sources */,
 				03882E011C980F7B008D076A /* Item.swift in Sources */,
 				03F20D721C88A7D400D3C442 /* ProductInfoViewController.swift in Sources */,
@@ -354,6 +361,7 @@
 				03882E001C980F7B008D076A /* Item+CoreDataProperties.swift in Sources */,
 				03547CD91C7333080075B825 /* AppDelegate.swift in Sources */,
 				0370CF3B1D15B499003E6BC2 /* CheckoutViewCell.swift in Sources */,
+				1B828D8B20DD36C500B65FB9 /* Payment2ViewController.swift in Sources */,
 				0341300D1C85AB9D009F8579 /* WelcomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
